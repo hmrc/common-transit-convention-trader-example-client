@@ -1,5 +1,6 @@
 import cats.effect.{ConcurrentEffect, ContextShift, ExitCode, IO, Timer}
 import org.http4s.server.blaze.BlazeServerBuilder
+import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
 import service.ApplicationService
 
 object HttpServer {
